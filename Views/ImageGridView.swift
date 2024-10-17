@@ -19,10 +19,12 @@ struct ImageGridView: View {
                         // Navigation link to the detail view for each image
                         NavigationLink(destination: ImageDetailView(images: viewModel.images, currentIndex: index)) {
                             GridView(urlString: image.thumbnailUrl)
+                                .accessibilityIdentifier("ImageCell-\(index)") 
                         }
                     }
                 }
                 .padding(viewModel.spacing) // Padding around the grid
+                .accessibilityIdentifier("ImageGridView")
             }
             .background(Color.blue.opacity(0.3))
             .navigationBarTitle(Constants.ImageGridView.NavigationTitle.rawValue , displayMode: .large)
