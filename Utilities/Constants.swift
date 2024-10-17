@@ -6,3 +6,17 @@
 //
 
 import Foundation
+
+struct Constants {
+    enum ApplicationURLS: String {
+        case photosUrl = "https://jsonplaceholder.typicode.com/photos"
+    }
+    
+    enum ImageGridView: String {
+        case NavigationTitle = "Image Gallery"
+    }
+    
+    enum ImageDetailView: String {
+        case NavigationTitle = "Image Details"
+    }
+}
