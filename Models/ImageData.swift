@@ -6,3 +6,12 @@
 //
 
 import Foundation
+
+/// This model is representing image data.
+struct ImageData: Codable {
+    let id: Int
+    let albumId: Int
+    let title: String
+    let url: String
+    let thumbnailUrl: String
+}
